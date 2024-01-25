@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Anurati Font';
+    src: url('Anurati-Regular.otf') format('opentype')
+}
+
+/* General Styles */
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #151515;
+    color: #FFEFCB;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #303030;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen {
+    
+}
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex: none;
+}
+
+@media screen and (min-width: 400px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
+nav a {
+    color: #FFEFCB;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0 20px;
+    border-radius: 40px;
+    border: 2px solid;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+nav a:hover {
+    border-color: #39FF14;
+    filter: drop-shadow(0 0 20px #39FF14) drop-shadow(0 0 4px #29FF14);
+}
+
+
+#title {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Anurati Font', sans-serif;
+}
+
+#title::before {
+    content: 'DiSe';
+    color: #FFEFCB;
+    filter: drop-shadow(0 0 10px #39FF14) drop-shadow(0 0 40px #39FF14);
+}
+
+
+/* About dise coontainer Styles */
+.grid-container {
+	display: grid;
+	background-color:#303030;
+    max-width: 960px;
+	color: #white;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
