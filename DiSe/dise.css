@@ -1,24 +1,21 @@
+/* Font */
 @font-face {
     font-family: 'Anurati Font';
-    src: url('Anurati-Regular.otf') format('opentype')
+    src: url('Anurati-Regular.otf') format('opentype');
 }
 
 /* General Styles */
 * {
-    margin: 10px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: #151515;
     color: #FFEFCB;
     font-family: "Barlow Semi Condensed", sans-serif;
-    margin: 0;
-    padding: 0;
 }
-
 
 header {
     background-color: #303030;
@@ -29,55 +26,99 @@ header {
     align-items: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-@media screen {
-    
-}
-/* Navigation Styles */
-nav ul {
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     padding: 0;
-    display: flex;
 }
 
-nav ul li {
-    flex: none;
-}
-
-@media screen and (min-width: 400px) {
-    nav ul {
-        justify-content: center;
-    }
-}
-
-nav a {
+.nav-item {
+    margin: 0 10px;
     color: #FFEFCB;
-    display: inline-flex;
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    padding: 0 20px;
-    border-radius: 40px;
-    border: 2px solid;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    transition: color 0.3s;
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: all 0.3s;
 }
 
-nav a:hover {
+.nav-item:hover,
+.nav-item:focus,
+.dropdown:hover,
+.dropdown:focus-within {
+    background-color: #303030;
     border-color: #39FF14;
     filter: drop-shadow(0 0 20px #39FF14) drop-shadow(0 0 4px #29FF14);
 }
 
+.dropdown {
+    position: relative;
+}
 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #303030;
+    color: #FFEFCB;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: border-radius 0.3s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #212121;
+    border: 2px solid #4CAF50;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%;
+    left: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #FFEFCB;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #4f4f4f;
+    border-radius: 15px 15px 15px 15px;
+}
+
+/* Change color of dropdown links on focus */
+.dropdown-content a:focus {
+    background-color: #212121;
+    color: #4CAF50;
+}
+
+/* Show the dropdown menu when the dropdown button is hovered or focused */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+/* Adjust hover effect for the dropdown button */
+.dropbtn:hover {
+    border-radius: 40px
+}
+
+/* Title Styles */
 #title {
     color: white;
     font-size: 4rem;
@@ -91,15 +132,25 @@ nav a:hover {
     filter: drop-shadow(0 0 10px #39FF14) drop-shadow(0 0 40px #39FF14);
 }
 
-
-/* About dise coontainer Styles */
+/* About DiSe Container Styles */
 .grid-container {
-	display: grid;
-	background-color:#303030;
+    display: grid;
+    background-color: #303030;
     max-width: 960px;
-	color: #white;
+    color: white;
     margin: 0 auto;
     padding: 20px;
-    margin-left: 0;
-    margin-top: 0;
-    margin-right: 0;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Shadow effect for Services dropdown */
+.dropdown-content {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* rounded corners for Services button on hover */
+.dropdown:hover {
+   border-radius: 40px;
+  
+}
