@@ -94,6 +94,9 @@ nav a:hover {
 
 /* About dise coontainer Styles */
 
+* {
+    box-sizing: border-box;
+  }
 
 .card {
     width: auto;
@@ -111,5 +114,7 @@ nav a:hover {
     padding: 20px;
     border-radius: 20px;
     border: 1px solid rgb(84 90 106);
+    float: left;
+    padding: 50px;
    }
 
