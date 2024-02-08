@@ -104,9 +104,28 @@ nav a:hover {
     margin-top: 0;
     margin-right: 0;
 
+    /*laatikko*/
+    .card {
+        float: center;
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        background: #303030;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.125rem;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(84 90 106);
+    }
+
 /*Contact form*/
 
     .form-container {
+        float: left;
         width: 400px;
         background: linear-gradient(#212121, #212121) padding-box,
                     linear-gradient(145deg,#FFEFCB, #FFEFCB) border-box;
@@ -205,4 +224,4 @@ nav a:hover {
       .form-container .form-submit-btn:hover {
         background-color: #151515;
         border-color: #FFEFCB;
-      }              
+      }            
