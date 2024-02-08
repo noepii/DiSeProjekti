@@ -101,7 +101,7 @@ header {
 .dropdown:focus-within {
 
     background-color: #303030;
-
+    transition: all 0.3s;
     border-color: #39FF14;
 
     filter: drop-shadow(0 0 20px #39FF14) drop-shadow(0 0 4px #29FF14);
@@ -122,7 +122,7 @@ header {
 
 .dropbtn {
 
-    background-color: #303030;
+    background-color:transparent;
 
     color: #FFEFCB;
 
@@ -132,7 +132,7 @@ header {
 
     font-weight: bold;
 
-    border: 2px solid transparent;
+    border: 2px transparent;
 
     border-radius: 40px;
 
@@ -303,3 +303,6 @@ header {
     border-radius: 40px;
 
 }
+
+/* nav bar items wrap*/
+
