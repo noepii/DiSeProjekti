@@ -79,7 +79,7 @@ nav a:hover {
 
 
 #title {
-    color: white;
+    color: #FFEFCB;
     font-size: 4rem;
     font-weight: bold;
     font-family: 'Anurati Font', sans-serif;
@@ -95,9 +95,9 @@ nav a:hover {
 /* About dise coontainer Styles */
 .grid-container {
 	display: grid;
-	background-color:#303030;
+	background-color:#151515;
     max-width: 960px;
-	color: #white;
+	color: #FFEFCB;
     margin: 0 auto;
     padding: 20px;
     margin-left: 0;
