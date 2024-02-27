@@ -230,10 +230,64 @@ header {
     }
 }
 
+/*laatikot*/
+
+*{
+	box-sizing: border-box;
+}
+
+.card{
+	float: left;
+	    width: 400px;
+	    height: 400px;
+	    border-radius: 30px;
+	    background: #303030;
+	    text-align: center;
+	    font-weight: 50;
+	    font-size: 1.325rem;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    flex: 50%;
+	    flex-flow: row wrap;
+	    padding: 10px;
+	    border: 1px solid rgb(84 90 106);
+	    margin-left:30px;
+	    align-content: stretch;
+   }
+
+/*tietokoneelle sopiva*/
+@media screen and (min-width: 800px) {
+    .card {
+      width: 45%;
+      display: block;
+      margin-bottom: 20px;
+      flex-direction: column;
+      justify-content: left;
+    }
+  }
+
+/*hower efekti laatikoiden reunoille*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .card:hover {
+    border-color: #39FF14;
+    filter: drop-shadow(0 0 20px #39FF14) drop-shadow(0 0 4px #29FF14) 
+}
+
+   .card2:hover {
+    border-color: #39FF14;
+    filter: drop-shadow(0 0 20px #39FF14) drop-shadow(0 0 4px #29FF14)
+   }
 
 
 
-/* About dise coontainer Styles */
+
+/* About dise coontainer Styles
 .grid-container {
 	display: grid;
 	background-color:#303030;
@@ -260,3 +314,4 @@ header {
     border-radius: 20px;
     border: 1px solid rgb(84 90 106);
 }
+*/
