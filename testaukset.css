@@ -521,4 +521,6 @@ header {
     filter: drop-shadow(0 0 20px #39FF14) drop-shadow(0 0 4px #29FF14)
    }
 
-   
+h2 {
+   text-align: center;
+}
