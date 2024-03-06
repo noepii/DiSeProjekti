@@ -6,48 +6,33 @@
     <title>Dise - Digital Security</title>
     <link rel="stylesheet" type="text/css" href="testaukset.css">
 </head>
-<body>
-    
-    <head>
-
-        <meta charset="UTF-8">
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-        <link rel="stylesheet" href="index.css">
-    
-    </head>
-    
-        <body>
-            <header>
-                <div id="title">
-                    <img src="dise3.png" alt="dise's logo, a ninja that's cutting up a virus with a sword" class="dise-logo">
+<body>    
+    <header>
+        <div id="title">
+            <img src="dise3.png" alt="dise's logo, a ninja that's cutting up a virus with a sword" class="dise-logo">
+        </div>
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_label">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <nav class="nav">
+            <a href="index.html" class="nav-item is-active" active-color="#DC143C">Home</a>
+            <a href="about.html" class="nav-item" active-color="#DC143C">About DiSe</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">
+                    <a href="koulutukset.html">Training packages</a>
+                    <a href="testaukset.html">Penetration testing</a>
                 </div>
-                <input type="checkbox" id="toggle_button">
-                <label for="toggle_button" class="toggle_label">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-                <nav class="nav">
-                    <a href="index.html" class="nav-item is-active" active-color="#DC143C">Home</a>
-                    <a href="about.html" class="nav-item" active-color="#DC143C">About DiSe</a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services</button>
-                        <div class="dropdown-content">
-                            <a href="koulutukset.html">Training packages</a>
-                            <a href="testaukset.html">Penetration testing</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item" active-color="#DC143C">Contact information</a>
-                </nav>
-            </header>
+            </div>
+            <a href="contact.html" class="nav-item" active-color="#DC143C">Contact information</a>
+         
+        </nav>
+    </header>
         
-        </body>
-        </html>
 
-    
         <section>
             <div class="clearfix">
             <h2>Penetration testing for companies</h2><br>
@@ -122,5 +107,6 @@
                 </div>
             </div>
         </section>
-	
+    </body>
+    </html>	
     
