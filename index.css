@@ -135,7 +135,10 @@ header {
     border-radius: 40px !important;
 }
 
-
+.flavour-image {
+    width: 100%;
+    height: auto;
+    
 
 /* About DiSe Container Styles */
 .grid-container {
